@@ -3,9 +3,9 @@ This repo is based on https://github.com/mikechernev/dockerised-php and http://g
 It is repo containing config for docker containers with nginx, php7 and mysql, and also nginx conf for secifically Symfony application.
 
 How to start?
-  1. clone this repo from github: `git clone git@github.com:zelazowy/docker-nginx-php7.git`
-  2. in repo's `code` dir install new Symfony installation: http://symfony.com/doc/current/setup.html
-  3. comment lines
+  * clone this repo from github: `git clone git@github.com:zelazowy/docker-nginx-php7.git`
+  * in repo's `code` dir install new Symfony installation: http://symfony.com/doc/current/setup.html
+  * comment lines in `app_dev.php`
 ```
 if (isset($_SERVER['HTTP_CLIENT_IP'])
     || isset($_SERVER['HTTP_X_FORWARDED_FOR'])
@@ -15,8 +15,8 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
     exit('You are not allowed to access this file. Check '.basename(__FILE__).' for more information.');
 }
 ```
-  4. add `ksawery.local` to your local `/etc/hosts` file (you can change it in `site.conf` in line containing `server_name ksawery.local;`)
-  5. run `docker-compose up` in main dir of this repo
-  6. you're set up!
+  * add `ksawery.local` to your local `/etc/hosts` file (you can change it in `site.conf` in line containing `server_name ksawery.local;`)
+  * run `docker-compose up` in main dir of this repo
+  * you're set up!
 
 If something not works - let me know, I'll be happy to help!
