@@ -21,9 +21,9 @@ It is repo containing config for docker containers with nginx, php7 and mysql, a
   * you're set up!
 
 ### Shortcut
-If you're lazy (as I am) you can use `setup.sh` script that does almost everything for you: creates directories, clones this repository, install newest symfony and adds `docker.local` to your hosts file.
-Download `setup.sh` file and execute it: `sudo sh setup.sh` in directory you want to work.
-You only have to comment lines listed in 4th point of standard installation instruction.
+If you're lazy (as I am) you can use `setup.sh` script that does almost everything for you: creates directories, clones this repository and install newest symfony.
+Download `setup.sh` file and execute it: `sh setup.sh` in directory you want to work.
+You only have to comment lines listed in 4th point of standard installation instruction and add `docker.local` host to your `/etc/hosts` file.
 
 If something not works - let me know, I'll be happy to help!
 
