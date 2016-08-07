@@ -5,7 +5,7 @@ It is repo containing config for docker containers with nginx, php7 and mysql, a
 ### How to start
   * create `symfony-docker` directory wherever you want
   * clone this repo from github: `git clone git@github.com:zelazowy/docker-nginx-php7.git conf`
-  * install Symfony Framework in `symfony-docker/symfony` directory http://symfony.com/doc/current/setup.html
+  * install Symfony Framework in `symfony-docker/code` directory http://symfony.com/doc/current/setup.html
   * comment lines in `app_dev.php`
   ```
   if (isset($_SERVER['HTTP_CLIENT_IP'])

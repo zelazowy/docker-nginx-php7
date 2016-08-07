@@ -5,7 +5,7 @@ services:
         ports:
             - "8686:80"
         volumes:
-            - ./code:/code
+            - ./../code:/code
             - ./site.conf:/etc/nginx/conf.d/default.conf
         links:
             - php
@@ -21,7 +21,7 @@ services:
     php:
         image: php:7-fpm
         volumes:
-            - ./code:/code
+            - ./../code:/code
         expose:
             - "9000"
         links:
